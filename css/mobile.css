@@ -1,0 +1,281 @@
+
+@media only screen and (max-width : 750px) {
+
+
+  .py-3 {
+    padding-bottom: 6px !important;
+    padding-top: 6px !important;
+}
+
+
+
+   .colemail{
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+
+
+
+
+  .opcao-escolhida {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.14), rgba(0,0,0,0.25)) !important; 
+  background-position: top left;  
+  background-size: 100%;  
+  background-repeat: repeat;
+  padding-bottom: 15px !important;
+}
+
+
+
+
+
+  .col-md-12.px-3.gallery {
+
+    max-height: 357px !important;
+
+}
+
+
+  .lados_lazer_1{
+
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+
+
+}
+
+
+.lados_lazer_2{
+
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+
+}
+
+
+  .legend{
+    max-width: 651px !important;
+    margin: 0 auto;
+}
+
+.itensresumo{
+      font-size: 14px !important;
+}
+
+.itensresumototal{
+      font-size: 18px !important;
+}
+
+  .carousel-caption {
+
+    left: -35.5% !important;
+
+
+  }
+
+  a#voltar {
+    width: 117% !important;
+  }
+
+  a#proximo {
+    width: 100% !important;
+  }
+
+
+  img.img-fluid.d-block.pt-3 {
+    min-height: 181px;
+  }
+
+  .removepaddings{
+
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+
+
+  }
+
+  .ajusta-mobile-1{
+
+    width: 100% !important;
+
+  }
+
+
+
+  #padrao-mobile{
+    display: initial;
+  }
+  #padrao-desktop{
+    display: none;
+  }
+
+
+
+
+  .carousel-caption{
+    max-width: 36% !important;
+  }
+
+  .al-titulo{
+
+    font-size: 1rem !important;
+    margin-bottom: 15px !important;
+    margin-top: 58px !important;
+    white-space: nowrap;
+
+    font-weight: 900 !important;
+
+  }
+
+  .pf-2{
+    padding-bottom: 15px !important;
+  }
+
+
+  .embed-responsive.embed-responsive-16by9 {
+    width: 100% !important;
+  }
+
+
+  .opcao {
+    padding-bottom: 15px !important;
+  }
+
+
+
+  .botaovoltar{
+
+    width: 100% !important;
+
+
+  }
+  .botaoproximo{
+
+    width: 100% !important;
+
+
+  }
+
+  .botaoreset{
+    font-size: 12px !important;
+    font-weight: 300;
+
+  }
+
+  #preco-mostra{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+
+  .titulo-etapas {
+    white-space: nowrap;
+    font-weight: 900 !important;
+    margin-bottom: 15px !important;
+   margin-top: 50px !important;
+    white-space: nowrap;
+    font-size: 1.5rem !important;
+    font-weight: 900 !important;
+  }
+
+
+  .logo{
+
+    display: none !important;
+  }
+
+  .logomobilebox{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3px;
+  }
+
+  .logomobile{
+    height: 100px;
+    display: flex !important;
+  }
+
+
+
+  .nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    list-style: none !important;
+  }
+
+
+
+
+  .logo-desktop{
+
+    display: none;
+
+  }
+
+  .espacamento-mobile{
+
+    display: flex !important;
+    height: 100px !important;
+
+  }
+
+ 
+
+
+  .ajusta-opcao-mobile{
+
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    margin-bottom: 20px !important;
+
+  }
+
+  .opcao-mobile-botom{
+
+    margin-bottom: 20px;
+
+  }
+
+
+
+  .nav-link {
+    font-size: 11px !important;
+  }
+
+
+  h3.display-1.text-dark.titulo-1 {
+    font-size: 2.3rem;
+  }
+
+
+
+  .ajusta-mobile {
+    padding-top: 8.5rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+
+
+
+
+
+  #proximo, #voltar{
+
+    margin: 0 auto;
+
+  }
+
+
+  .colpreco {
+    padding-top: 15px;
+    margin-bottom: -19px;
+  }
+  .colproximo{
+
+    padding-bottom: 15px;
+  }
+
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="imagens/favicon.ico">
+  <title>Sua Casa</title>
+  <meta name="description" content="Sua Casa">
+  <meta name="keywords" content="Sua Casa">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/elegant.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+   <link rel="stylesheet" href="css/notebook.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
+  <script src="js/navbar-ontop.js"></script>
+  <script src="js/animate-in.js"></script>
+  <link href="css/simplelightbox.min.css" rel="stylesheet" type="text/css">
+  <meta property="og:image" content="https://suacasaseuestilo.com.br/simulador/tb.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:image:alt" content="Simulador">
+  <meta property="og:description" content="A casa dos seus sonhos, na palma da sua mão!">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:site_name" content="Sua Casa Seu Estilo">
+  <meta property="og:title" content="Conheça nosso Simulador!">
+</head>
+
+<body class="m-0 p-0 fundo">
+  <div class="d-flex justify-content-center">
+    <div class="container d-flex justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-12 justify-content-center d-flex">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="start py-1">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <div class="d-flex justify-content-center col-md-9 col-sm-12 col-12">
+          <div class="row">
+            <div class="d-flex justify-content-center logomobilebox" style="">
+              <img class="logomobile" src="imagens/logo.svg">
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-10 col-12 removepaddings" style="">
+              <ul class="nav nav-pills w-100 d-flex justify-content-center">
+                <li class="nav-item"> <a id="nav-0" class="active nav-link">Início</a> </li>
+                <li class="nav-item"> <a id="nav-1" class="disabled nav-link">Planta</a> </li>
+                <li class="nav-item"> <a id="nav-2" class="disabled nav-link">Ambientes</a> </li>
+                <li class="nav-item"> <a id="nav-3" class="disabled nav-link">Fachada</a> </li>
+                <li class="nav-item"> <a id="nav-4" class="disabled nav-link">Padrão</a> </li>
+                <li class="nav-item"> <a id="nav-5" class="disabled nav-link">Área de Lazer</a> </li>
+                <li class="nav-item"> <a id="nav-6" class="disabled nav-link">Terreno<br></a> </li>
+                <li class="nav-item"> <a id="nav-7" class="disabled nav-link">Resumo<br></a> </li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-12 col-12 d-flex justify-content-center logobox" style="">
+              <img class="d-block logo" src="imagens/logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt0 py-5 ajusta-mobile ajusta-medium-desktop " id="inicio" style="">
+    <div class=" container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h3 class="display-1 text-dark titulo-1">Vamos começar?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <form id="formulario" name="formulario" method="POST" action="">
+          <div class="col-md-12 d-flex justify-content-center">
+            <div class="row w-75 ajusta-mobile-1">
+              <div class="col-md-6 d-flex justify-content-center align-items-center my-2">
+                <div class="form-group">
+                  <input type="text" class="form-control text-center form-control-lg px-5" id="nome" name="nome" placeholder="Nome" onblur="removeAlerta(1)"> <span id="nomehint" class="hint ">Preencha um nome válido.</span>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center align-items-center my-2">
+                <div class="form-group"><input type="text" class="form-control text-center form-control-lg px-5 telefone" id="telefone" name="telefone" placeholder="Telefone" onblur="removeAlerta(2)"><span id="telefonehint" class="hint ">Preencha um telefone válido.</span></div>
+              </div>
+              <div class="d-flex justify-content-center align-items-center my-2 col-md-9">
+                <div class="form-group w-100">
+                  <input type="email" class="form-control text-center form-control-lg" id="email" name="email" placeholder="E-mail" required="required" onblur="removeAlerta(3)"> <span id="emailhint" class="hint ">Preencha um email válido.</span>
+                </div>
+              </div>
+              <div class="my-2 col-md-3">
+                <input type="submit" id="start" class="btn btn-primary btn-lg btn-block" value="começar" onclick="return false;">
+              </div>
+              <div class="d-flex justify-content-center align-items-center my-2 col-md-9" id="msgemail"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center"><img class="d-block entradaimg" src="imagens/elemento entrada.svg" height="250px"></div>
+      </div>
+    </div>
+  </div>
+  <div id="nav_inferior" class="fixed-bottom mx-0 hidden">
+    <div class="mx-0 px-0 container-fluid">
+      <div class="row py-4 bg-light fundoopcoesmobile">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="text-right col-md-4">
+              <h1 class="text-dark" data-escolhidos="" data-temp="" data-tempb="" data-total="0" id="preco-mostra" contenteditable="false">&nbsp; Valor: R$ 0.000,00</h1>
+            </div>
+            <div class="col-4 text-center col-md-4"><a id="voltar" class="btn btn-lg text-uppercase btn-danger w-50 botaovoltar hidden" style="">VOLTAR</a></div>
+            <div class="col-8 text-left col-md-4"><a id="proximo" class="btn btn-lg text-uppercase disabled btn-warning w-50 botaoproximo">PRÓXIMO</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nav_resumo" class="fixed-bottom mx-0 hidden">
+    <div class="mx-0 px-0 container-fluid">
+      <div class="row bg-light fundoopcoesmobile py-3">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div class="row w-75 d-flex justify-content-center">
+            <div class="col-xs-3 colemail justify-content-center d-flex col-md-3"><a class="btn btn-lg text-uppercase w-50 botaoreset m-1 px-0 btn-primary" onclick="reset();" style="	min-width: 250px;" id="restart">SIMULAR NOVAMENTE</a></div>
+            <div class="col-xs-3 colemail justify-content-center d-flex col-md-3"><a id="email" class="btn text-uppercase btn-danger w-50 botaoemail btn-lg m-1 px-0" onclick="recebaPorEmail();" style="	min-width: 250px;">Receba por E-mail</a></div>
+            <div class="col-xs-3 colemail d-flex justify-content-center col-md-3"><a id="whats" href="https://wa.me/5554999013231?text=%20sua%20casa" target="_blank" class="btn btn-lg text-uppercase btn-warning w-50 botaowhats  m-1 px-0" style="	min-width: 250px;">Agendar reunião </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="plantas" class="hidden" style="">
+    <div class="w-100 container-fluid">
+      <div class="row w-100">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="titulo-etapas w-50 align-items-center d-flex justify-content-center text-dark"> Escolha sua planta</h2>
+        </div>
+      </div>
+      <div class="row mx-5 ajusta-opcao-mobile">
+        <div class="col-md-3 col-sm-6 col-12 px-3 opcao-mobile-botom">
+          <div id="opcao-planta-1" data-valor="221400" data-opcao="1" class="opcao">
+            <div class="col-md-12 gallery px-3 d-flex justify-content-center" style="">
+              <a href="imagens/1 - plantas/1.jpg"><img class="img-fluid d-block pt-3 imgs_plantas" src="imagens/1 - plantas/t1.jpg">
+                <div class="lupa-caption">
+                  <img class="img-fluid d-block lupa" src="imagens/lupa.png">
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 mt-2 text-dark descplantas">82 m² - 2 Dormitórios</h3>
+              <h3 class="w-100 text-center mb-0 text-dark descplantas">A partir de R$ 221.400,00</h3>
+              <img id="check-planta-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 px-3 opcao-mobile-botom">
+          <div id="opcao-planta-2" data-valor="251100" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery d-flex justify-content-center" style="">
+              <a href="imagens/1 - plantas/2.jpg"><img class="img-fluid d-block pt-3 imgs_plantas" src="imagens/1 - plantas/t2.jpg">
+                <div class="lupa-caption">
+                  <img class="img-fluid d-block lupa" src="imagens/lupa.png">
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 mt-2 descplantas">93 m² - 3 Dormitórios</h3>
+              <h3 class="text-dark w-100 text-center mb-0 descplantas">A partir de R$ 251.100,00</h3>
+              <img id="check-planta-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 px-3 opcao-mobile-botom">
+          <div id="opcao-planta-3" data-valor="256500" data-opcao="3" class="opcao">
+            <div class="col-md-12 px-3 gallery d-flex justify-content-center" style="">
+              <a href="imagens/1 - plantas/3.jpg"><img class="img-fluid d-block pt-3 imgs_plantas" src="imagens/1 - plantas/t3.jpg">
+                <div class="lupa-caption">
+                  <img class="img-fluid d-block lupa" src="imagens/lupa.png">
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 mt-2 descplantas">95 m² - 2 Dormitórios</h3>
+              <h3 class="text-dark w-100 text-center mb-0 descplantas">A partir de R$ 256.500,00</h3>
+              <img id="check-planta-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom">
+          <div id="opcao-planta-4" data-valor="329400" data-opcao="4" class="opcao">
+            <div class="col-md-12 px-3 gallery d-flex justify-content-center" style="">
+              <a href="imagens/1 - plantas/4.jpg"><img class="img-fluid d-block pt-3 imgs_plantas" src="imagens/1 - plantas/t4.jpg">
+                <div class="lupa-caption">
+                  <img class="img-fluid d-block lupa" src="imagens/lupa.png">
+                </div>
+              </a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 mt-2 descplantas">122 m² - 3 Dormitórios</h3>
+              <h3 class="text-dark w-100 text-center mb-0 descplantas">A partir de R$ 329.400,00</h3>
+              <img id="check-planta-4" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ambientes" class="hidden">
+    <div class="w-100 container">
+      <div class="row w-100">
+        <div class="col-md-12 col-xs-12 d-flex justify-content-center">
+          <h2 class="titulo-etapas w-50 align-items-center d-flex justify-content-center text-dark">Conheça seu Ambiente</h2>
+        </div>
+      </div>
+      <div class="row hidden" id="ambientes-1">
+        <div class="col-md-12 col-xs-12 d-flex justify-content-center">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/337824189?autoplay=1&amp;muted=1" class="embed-responsive-item" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h6 class="my-1 text-dark text-left legend">*Imagens meramente ilustrativas. Os móveis e objetos decorativos não estão inclusos na proposta.</h6>
+        </div>
+      </div>
+      <div class="row hidden" id="ambientes-3">
+        <div class="col-md-12 col-xs-12 d-flex justify-content-center">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/337824256?autoplay=1&amp;muted=1" class="embed-responsive-item" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h6 class="my-1 text-dark text-left legend">*Imagens meramente ilustrativas. Os móveis e objetos decorativos não estão inclusos na proposta.</h6>
+        </div>
+      </div>
+      <div class="row hidden" id="ambientes-4">
+        <div class="col-md-12 col-xs-12 d-flex justify-content-center">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://player.vimeo.com/video/337824311?autoplay=1&amp;muted=1" class="embed-responsive-item" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h6 class="my-1 text-dark text-left legend">*Imagens meramente ilustrativas. Os móveis e objetos decorativos não estão inclusos na proposta.</h6>
+        </div>
+      </div>
+      <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+      </div>
+    </div>
+  </div>
+  <div id="fachadas" class="hidden">
+    <div class="w-100 container-fluid">
+      <div class="row w-100">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="w-50 align-items-center d-flex justify-content-center display-4 text-dark titulo-etapas">Escolha sua Fachada</h2>
+        </div>
+      </div>
+      <div class="row mx-5 my-4 hidden" id="fachadas-planta-1">
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p1-1" data-valor="8200" data-opcao="1" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/classica/a.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/classica/a.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 text-dark py-2 padingtop-2">Valor: R$ 8.200,00</h3>
+              <img id="check-fachadas-p1-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p1-2" data-valor="4100" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/contemporanea/a.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/contemporanea/a.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 py-2 padingtop-2">Valor: R$ 4.100,00</h3>
+              <img id="check-fachadas-p1-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p1-3" data-valor="0" data-opcao="3" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/moderna/a.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/moderna/a.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 py-2 padingtop-2">Valor: R$ 0,00</h3>
+              <img id="check-fachadas-p1-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+      <div class="row mx-5 my-4 hidden" id="fachadas-planta-2">
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p2-1" data-valor="9300" data-opcao="1" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/classica/b.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/classica/b.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 text-dark py-2 padingtop-2">Valor: R$ 9.300,00</h3>
+              <img id="check-fachadas-p2-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p2-2" data-valor="4650" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/contemporanea/b.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/contemporanea/b.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 py-2 padingtop-2">Valor: R$ 4.650,00</h3>
+              <img id="check-fachadas-p2-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p2-3" data-valor="0" data-opcao="3" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/moderna/b.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/moderna/b.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0  py-2 padingtop-2">Valor: R$ 0,00</h3>
+              <img id="check-fachadas-p2-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+      <div class="row mx-5 my-4 hidden" id="fachadas-planta-3">
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p3-1" data-valor="5000" data-opcao="1" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/classica/c.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/classica/c.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 text-dark  py-2 padingtop-2">Valor: R$ 9.500,00</h3>
+              <img id="check-fachadas-p3-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p3-2" data-valor="6000" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/contemporanea/c.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/contemporanea/c.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 py-2 padingtop-2">Valor: R$ 4.750,00</h3>
+              <img id="check-fachadas-p3-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p3-3" data-valor="0" data-opcao="3" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/moderna/c.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/moderna/c.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0  py-2 padingtop-2">Valor: R$ 0,00</h3>
+              <img id="check-fachadas-p3-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+      <div class="row mx-5 my-4 hidden" id="fachadas-planta-4">
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p4-1" data-valor="5000" data-opcao="1" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/classica/d.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/classica/d.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 text-dark  py-2 padingtop-2">Valor: R$ 12.200,00</h3>
+              <img id="check-fachadas-p4-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p4-2" data-valor="6100" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/contemporanea/d.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/contemporanea/d.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 py-2 padingtop-2">Valor: R$ 6.100,00</h3>
+              <img id="check-fachadas-p4-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 px-3 pf-2">
+          <div id="opcao-fachadas-p4-3" data-valor="0" data-opcao="3" class="opcao">
+            <div class="col-md-12 px-3 gallery" style="">
+              <a href="imagens/2 - fachadas/moderna/d.jpg"><img class="img-fluid d-block pt-3" src="imagens/2 - fachadas/moderna/d.jpg"></a>
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0  py-2 padingtop-2">Valor: R$ 0,00</h3>
+              <img id="check-fachadas-p4-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="padroes" class="hidden" style="">
+    <div class="h-75 container-fluid">
+      <div class="row w-100">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="w-50 align-items-center d-flex justify-content-center display-4 text-dark titulo-etapas">Escolha seu Padrão</h2>
+        </div>
+      </div>
+      <div class="row h-75" id="padrao-desktop">
+        <div class="col-md-12">
+          <div class="row d-flex justify-content-center mx-5">
+            <div class="col-md-4 px-4 padrao">
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <h3 class="espaca text-dark text-center mb-0 mt-1">&nbsp; &nbsp;&nbsp;</h3>
+                  <p class="lead break">Piso Porcelanato Polido</p>
+                  <p class="lead break">Revestiento Cerãmico Boxes Banheiros</p>
+                  <p class="lead break">Revestimento Cerãmico Parede Lavanderia</p>
+                  <p class="lead break">Esquadrias em Alumínio</p>
+                  <p class="lead break">Forro Rebaixado em Gesso</p>
+                  <p class="lead break">Portas Internas</p>
+                  <p class="lead break">Rodapés de Poliestileno</p>
+                  <p class="lead break">Isolamento Termoacústico ( lã de vidro)</p>
+                  <p class="lead break">Emplacamento OSB</p>
+                  <p class="lead break">Estrutura de Alta Tecnologia - Steel Frame</p>
+                  <p class="lead break">Instalações Hidráulica e de Esgoto</p>
+                  <p class="lead break">Instalações de Água Quente</p>
+                  <p class="lead break">Pré-Instalações de reúso de Água de Chuva</p>
+                  <p class="lead break">Pintura Elastomérica Externa</p>
+                  <p class="lead break">Pintura Interna com tinta Coral Decora</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 px-5 padrao">
+              <div class="col-md-12 px-4 standard opcao" id="opcao-padrao-1" data-valor="0" data-opcao="1">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h3 class="text-dark text-center mb-0 mt-1">Standard</h3>
+                    <p class="lead break">60 x 60 até R$ 30,00/m2</p>
+                    <p class="lead break">Até R$ 20,00/m2</p>
+                    <p class="lead break">Até R$ 20,00/m2</p>
+                    <p class="lead break">Vidros Simples</p>
+                    <p class="lead break">Liso c/ Negativos</p>
+                    <p class="lead break">MDF Esmaltado</p>
+                    <p class="lead break">7cm liso</p>
+                    <p class="lead break">Forros e Paredes</p>
+                    <p class="lead break">Reforços Pontuais</p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                  </div>
+                  <div class="col-md-12 align-items-center d-flex justify-content-center">
+                    <h3 class="text-center text-dark mb-0">R$ 0,00</h3>
+                  </div>
+                  <div class="col-md-12 align-items-center d-flex justify-content-center">
+                    <img id="check-padrao-1" class="img-fluid d-block" src="imagens/no-check.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 px-5 padrao">
+              <div class="col-md-12 px-4 luxo opcao" id="opcao-padrao-2" data-valor="9000" data-opcao="2">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h3 class="text-dark text-center mb-0 mt-1">Luxo</h3>
+                    <p class="lead break">80 x 80 até R$ 80,00/m2</p>
+                    <p class="lead break">Até R$ 80,00/m2</p>
+                    <p class="lead break">Até R$ 80,00/m2</p>
+                    <p class="lead break">Vidros Duplo c/ Câmara de Ar</p>
+                    <p class="lead break">Detalhes Decorativos</p>
+                    <p class="lead break">MDF Laqueado</p>
+                    <p class="lead break">10cm frisado</p>
+                    <p class="lead break">Forros e Paredes</p>
+                    <p class="lead break">Todas as Paredes Internas</p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                    <p class="lead break text-success text-center"><img class="img-fluid d-block m-0 mx-auto margin-check contem" src="imagens/sim.png"></p>
+                  </div>
+                  <div class="col-md-12 align-items-center d-flex justify-content-center">
+                    <h3 id="preco-padrao-luxo" class="text-center text-dark mb-0">R$ 0,00</h3>
+                  </div>
+                  <div class="col-md-12 align-items-center d-flex justify-content-center">
+                    <img id="check-padrao-2" class="img-fluid d-block" src="imagens/no-check.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-5 ajusta-opcao-mobile" id="padrao-mobile">
+        <div class="col-md-3 col-sm-6 col-12 px-3 opcao-mobile-botom">
+          <div id="opcao-padraom-1" data-valor="0" data-opcao="1" class="opcao">
+            <div class="col-md-12 gallery px-3 d-flex justify-content-center" style="">
+              <img class="img-fluid d-block pt-3 imgs_padroes_mobile" src="imagens/3 - padrões/standard.png">
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="w-100 text-center mb-0 text-dark descplantas">R$ 0,00</h3>
+              <img id="check-padraom-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 px-3 opcao-mobile-botom">
+          <div id="opcao-padraom-2" data-valor="0" data-opcao="2" class="opcao">
+            <div class="col-md-12 px-3 gallery d-flex justify-content-center" style="">
+              <img class="img-fluid d-block pt-3 imgs_padroes_mobile" src="imagens/3 - padrões/luxo.png">
+            </div>
+            <div class="col-md-12 my-0" style="">
+              <h3 class="text-dark w-100 text-center mb-0 descplantas" id="preco-padraom-luxo">R$ 0,00</h3>
+              <img id="check-padraom-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lazer" class="hidden">
+    <div class="w-100 container-fluid" style="">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="w-50 align-items-center d-flex justify-content-center display-2 text-dark al-titulo">Escolha sua área de lazer (opcional)</h2>
+        </div>
+      </div>
+      <div class="row mx-5">
+        <div class="col-sm-6 col-12 col-md-6 mt-2">
+          <div class="opcao px-3 pb-1 lados_lazer_1" id="opcao-lazer-1" data-valor="140320" data-opcao="1">
+            <div class="gallery justify-content-center d-flex">
+              <a id="lazer-link-1" href="imagens/lazer/82/completo_.jpg" class="d-flex justify-content-center" style=""><img id="lazer-1" class="d-block w-100 pt-3" src="imagens/lazer/82/completo.jpg" style="	max-height: 220px;">
+              </a>
+              <div class="carousel-caption">
+                <h5 class="text-light bg-dark m-0 mt-3 legenda">Área completa</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-0" style="">
+                <h3 class="w-100 text-center text-dark mb-0 mt-1">Valor: R$ 140.320,00</h3>
+                <img id="check-lazer-1" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 mt-2">
+          <div class="opcao px-3 pb-1 lados_lazer_2" id="opcao-lazer-2" data-valor="105120" data-opcao="2">
+            <div class="gallery justify-content-center d-flex">
+              <a id="lazer-link-2" href="imagens/lazer/82/piscina_.jpg" class="d-flex justify-content-center" style=""><img id="lazer-2" class="d-block w-100 pt-3" src="imagens/lazer/82/piscina.jpg" style="	max-height: 220px;">
+              </a>
+              <div class="carousel-caption">
+                <h5 class="text-light bg-dark m-0 mt-3 legenda">Piscina + Muro + Grama</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-0" style="">
+                <h3 class="w-100 text-center text-dark mb-0 mt-1">Valor: R$ 105.120,00</h3>
+                <img id="check-lazer-2" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 mt-2">
+          <div class="opcao px-3 pb-1 lados_lazer_1" id="opcao-lazer-3" data-valor="73120" data-opcao="3">
+            <div class="gallery justify-content-center d-flex">
+              <a id="lazer-link-3" href="imagens/lazer/82/quiosque_.jpg" class="d-flex justify-content-center" style=""><img id="lazer-3" class="d-block w-100 pt-3" src="imagens/lazer/82/quiosque.jpg" style="	max-height: 220px;">
+              </a>
+              <div class="carousel-caption">
+                <h5 class="text-light bg-dark m-0 mt-3 legenda">Quiosque + Muro + Grama</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-0" style="">
+                <h3 class="w-100 text-center text-dark mb-0 mt-1">Valor: R$ 73.120,00</h3>
+                <img id="check-lazer-3" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-12 col-md-6 mt-2">
+          <div class="opcao px-3 pb-1 lados_lazer_2" id="opcao-lazer-4" data-valor="37920" data-opcao="4">
+            <div class="gallery justify-content-center d-flex">
+              <a id="lazer-link-4" href="imagens/lazer/82/nada_.jpg" class="d-flex justify-content-center" style=""><img id="lazer-4" class="d-block w-100 pt-3" src="imagens/lazer/82/nada.jpg" style="	max-height: 220px;">
+              </a>
+              <div class="carousel-caption">
+                <h5 class="text-light bg-dark m-0 mt-3 legenda">Muro + grama</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 my-0" style="">
+                <h3 class="w-100 text-center text-dark mb-0 mt-1">Valor: R$ 37.920,00</h3>
+                <img id="check-lazer-4" class="img-fluid d-block mx-auto" src="imagens/no-check.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden" id="terreno">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="w-50 align-items-center d-flex justify-content-center display-4 text-dark titulo-etapas">Escolha seu terreno</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 justify-content-center d-flex maparow " style=""><img id="mapa" class="img-fluid d-block" src="imagens/6 - terreno/mapa3.jpg"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center">
+          <a id="opcao-terreno-1" class="btn btn-secondary btn-lg my-2 opcao2 hover" data-valor="125200" data-opcao="1">Área H<br>A partir de R$125.200,00</a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <a id="opcao-terreno-2" class="btn btn-secondary btn-lg my-2 opcao2 hover" data-valor="123200" data-opcao="2">Área D<br>A partir de R$123.200,00</a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <a id="opcao-terreno-3" class="btn btn-secondary btn-lg my-2 opcao2 hover" data-valor="155200" data-opcao="3">Área E<br>A partir de R$155.200,00</a>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center">
+          <a id="opcao-terreno-4" class="btn btn-secondary btn-lg my-2 opcao2 hover" data-valor="0" data-opcao="4">Já possuo<br> terreno</a>
+        </div>
+        <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2 hidden" id="resumo" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <h2 class="w-50 align-items-center d-flex justify-content-center display-4 text-dark titulo-etapas">Suas Escolhas</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-md-12 col-12" style="">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center pb-1" style="">
+              <img id="imgfinal" class="d-block w-100 h-100 img-resumo" src="imagens/2 - fachadas/classica/a.jpg" style="	max-width: 480px;	max-height: 310px;">
+            </div>
+          </div>
+          <h4 class="text-dark text-center py-2 m-0 itensresumo" id="item1">Fachada </h4>
+          <h4 class="text-dark text-center py-2 m-0 itensresumo" id="item2">Área </h4>
+          <h4 class="text-dark text-center m-0  py-2 itensresumo" id="item3">Padrão </h4>
+          <h4 class="text-dark text-center m-0  py-2 itensresumo" id="item4"></h4>
+          <h4 class="text-dark text-center m-0  py-2 itensresumo" id="item5"></h4>
+          <h1 class="text-dark m-0 py-2 text-center w-100 itensresumototal" id="total">Valor Total: <br></h1>
+        </div>
+      </div>
+      <div class="col-md-3 h-50 col-sm-6  px-3 col-12 opcao-mobile-botom espacamento-mobile">
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/main.js" style=""></script>
+    <script src="js/goback.js" style=""></script>
+  <script src="js/opcoes.js"></script>
+  <script type="text/javascript" src="js/simple-lightbox.js"></script>
+  <script src="js/jquery.inputmask.bundle.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#telefone").inputmask({
+        mask: ["(99) 9999-9999", "(99) 99999-9999", ],
+        keepStatic: true
+      });
+    });
+  </script>
+</body>
+
+</html>

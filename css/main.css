@@ -1,0 +1,413 @@
+.hint { 
+  color: #dbdbdb; 
+  font-style: italic; 
+}
+
+.visivel{color: red !important;}
+
+.lados_lazer_1{
+
+  margin-left: 13.5rem;
+  margin-right: 1.5rem;
+
+
+}
+
+
+.lados_lazer_2{
+
+  margin-left: 1.5rem;
+  margin-right: 13.5rem;
+
+}
+
+
+
+
+
+.botaowhats, .botaoemail , .botaoreset{
+  width: 50% ;
+}
+/*.botaowhats{
+  text-align: right;
+}
+.botaoemail{
+  text-align: left;
+  }*/
+  #padrao-mobile{
+    display: none;
+  }
+
+  .colemail{
+    text-align: right;
+  }
+  .colwhats{
+    text-align: left;
+  }
+
+  .lupa-caption{
+    width: 251px;
+    height: 457px;
+    opacity: 0;
+    position: absolute;
+    top: 24px;
+    /* right: 40%; */
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+
+  .lupa-caption:hover{
+
+   opacity: 0.5;
+
+
+ }
+
+ .lupa{
+  max-width: 55px;
+  top: 50%;
+  right: 37%;
+  position: absolute;
+}
+
+
+
+.botaowhats{
+  background-color: #fb5a00;
+  border-color: #fb5a00;
+  color:black;
+
+}
+
+
+.botaoemail{
+  background-color: #ff9302;
+  border-color: #ff9302;
+  color:black !important;
+
+}
+
+.botaowhats:hover { 
+  background-color: #fb5a00a1;
+  border-color: #fb5a00a1;
+
+}
+
+
+.botaoemail:hover{
+  background-color: #ff9302b8;
+  border-color: #ff9302b8;
+
+}
+
+
+
+
+
+
+
+
+
+
+.logomobile{
+  display: none;
+}
+
+
+.contem{
+  width: 22px;
+}
+
+a#opcao-terreno-4 {
+  padding-left: 68px;
+  padding-right: 68px;
+}
+
+/*.legenda{
+    white-space: nowrap;
+    padding-right: 180px !important;
+    padding-left: 25px;
+
+}
+*/
+
+.logo{
+  height: 150px;
+
+}
+
+.standard{
+  background-color: #FF9302;
+}
+.luxo{
+  background-color: #FB5A00;
+}
+
+
+
+.colpreco{
+  white-space: nowrap;
+}
+
+
+.imgs_plantas {
+  max-height: 480px;
+}
+
+.margin-check{
+
+
+  margin-top: 9px !important;
+  margin-bottom: 8px !important;
+
+}
+
+
+#plantas, #ambientes, #fachadas, #padroes, #lazer, #terreno, #resumo{
+  margin-top: -50px;
+}
+
+
+.padrao{
+
+  margin-left: -40px;
+  margin-right: -40px;
+}
+p{
+  margin-bottom: 0px;
+  color: black;
+  font-size:1rem;
+}
+
+#voltar{
+  background-color: #FF9302;
+  border-color: #FF9302;
+
+}
+#proximo{
+  background-color: #FB5A00;
+  border-color: #FB5A00;
+}
+
+li.nav-item {
+  font-size: 17px !important;
+}
+
+.logo-desktop{
+
+  display: initial;
+
+}
+
+.logo-mobile{
+
+  display: none !important;
+
+}
+
+
+
+.titulo-etapas {
+  white-space: nowrap;
+  font-size: 1.5rem ;
+  font-weight: 900 ;
+  margin-bottom: 30px ;
+}
+
+
+
+/* TELA MOBILE */
+
+
+
+.choises {
+  margin-top: 3rem;
+}
+
+
+
+
+
+.centralizar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.hidden{
+  display: none !important;
+}
+
+h4.m-0.aa {
+  color: #f8f9fa;
+  font-size: 11px; 
+  background-color: black;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 6.5%;
+  top: 10px;
+  left: -44.5%;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 20%;
+}
+
+
+
+
+*  {
+ font-family: 'Helvetica', sans-serif !important;
+}
+
+.escolhido {
+  border-style: inset;
+  border-color: #0cff0c;
+  border-radius: 8px;
+  border-width: 3px;
+}
+
+
+.barra_inferior{
+
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  padding: 4px;
+  background-color: white;
+  width:100%;  
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+
+}
+
+
+.vamkrai {
+  height: 100px;
+}
+
+li.nav-item {
+  font-size: 20px;
+}
+
+
+.container .gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+
+/* line 46, ../sass/demo.scss */
+.opcao:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+
+  -webkit-transition: -webkit-transform .30s ease;
+  -moz-transition: -moz-transform .30s ease;
+  -o-transition: -o-transform .30s ease;
+  -ms-transition: -ms-transform .30s ease;
+  transition: transform .30s ease;
+  background-image: linear-gradient(to bottom, rgba(123, 123, 123, 0.14), rgba(160, 158, 158, 0.28)); background-position: top left;  background-size: 100%;  background-repeat: repeat;
+
+
+
+  z-index: 5;
+}
+
+
+
+
+
+.opcao {
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  cursor: pointer;
+
+
+  -webkit-transition: -webkit-transform .30s ease;
+  -moz-transition: -moz-transform .30s ease;
+  -o-transition: -o-transform .30s ease;
+  -ms-transition: -ms-transform .30s ease;
+  transition: transform .30s ease;
+  /*  border-radius: 20px;*/
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.14), rgba(0,0,0,0.25)); background-position: top left;  background-size: 100%;  background-repeat: repeat;
+  padding-bottom: 15px;
+}
+
+.opcao-escolhida {
+ -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -o-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+ -webkit-transition: -webkit-transform .30s ease;
+ -moz-transition: -moz-transform .30s ease;
+ -o-transition: -o-transform .30s ease;
+ -ms-transition: -ms-transform .30s ease;
+ transition: transform .30s ease;
+ /* border-radius: 20px;*/
+ padding-bottom: 20px;
+
+ background-image: linear-gradient(to bottom, rgba(123, 123, 123, 0.14), rgba(160, 158, 158, 0.28)); 
+ background-position: top left;  
+ background-size: 100%;  
+ background-repeat: repeat;
+}
+
+.fundo {
+  background-color: #11111126;
+}
+
+
+.opcao2-escolhida {
+  background-color: #71cc76;
+  border-color:#71cc76 
+}
+
+.opcao2-escolhida:hover {
+  background-color: #71cc76 !important;
+  border-color:#7ee283 !important;
+
+}
+
+.al-titulo {
+  white-space: nowrap;
+  font-weight: 900 ;
+  margin-bottom: 15px ;
+  margin-top: 10px ;
+  white-space: nowrap;
+  font-size: 1.5rem ;
+  font-weight: 900 ;
+}
+
+
